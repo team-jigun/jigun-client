@@ -1,0 +1,12 @@
+{
+  "name": "20210308",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "ejs": "^3.1.6",
+    "express": "^4.17.1",
+    "node-notifier": "^9.0.0",
+    "socket.io-client": "^3.1.2"
+  }
+}
