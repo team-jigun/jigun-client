@@ -1,7 +1,7 @@
 const io = require('socket.io-client');
 const notifier = require('node-notifier')
 const path = require('path')
-const socket = io.connect('http://192.168.0.83:9999/', {
+const socket = io.connect('http://222.110.147.50:9999/', {
     reconnectionDelayMax: 10000,
     query: {
         key: "asd"
@@ -18,5 +18,5 @@ socket.on('jigun', (sender, message,callback) => {
         message,
         icon: path.join(__dirname, '1001.png'),
     });
-    callback('지건마렵네')
+    callback()
 })
