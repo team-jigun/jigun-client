@@ -8,7 +8,11 @@ const socket = io.connect('http://222.110.147.50:9999/', {
     }
 });
 socket.on('connect', () => {
-    console.log('소켓이 연결되었습니다.');
+    notifier.notify({
+        title : "소켓이 연결되었습니다.",
+        message : "소켓이 연결되었습니다.",
+        icon : path.join(__dirname, '1001.png')
+    })
 })
 
 socket.on('jigun', (sender, message,callback) => {
